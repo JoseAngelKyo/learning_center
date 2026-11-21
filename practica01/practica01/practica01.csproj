@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.1.2" />
+    <PackageReference Include="Cortex.Mediator" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14" PrivateAssets="all" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.12" />
+    <PackageReference Include="Humanizer" Version="3.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="services\application\" />
+    <Folder Include="services\domain\" />
+    <Folder Include="services\infrastructure\" />
+    <Folder Include="services\interfaces\" />
+    <Folder Include="services\resources\" />
+    <Folder Include="shared\application\Internal\" />
+    <Folder Include="shared\application\Model\" />
+    <Folder Include="shared\domain\model\Aggregates\" />
+    <Folder Include="shared\domain\model\Errors\" />
+    <Folder Include="shared\domain\model\Events\" />
+    <Folder Include="shared\domain\model\ValueObjects\" />
+    <Folder Include="shared\domain\repositories\" />
+    <Folder Include="shared\infrastructure\interfaces\" />
+    <Folder Include="shared\infrastructure\mediator\" />
+    <Folder Include="shared\infrastructure\persistence\" />
+    <Folder Include="shared\infrastructure\pipeline\" />
+    <Folder Include="shared\interfaces\Rest\" />
+    <Folder Include="shared\Resources\Errors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="shared\Resources\CommonMessages.resx">
+      <LogicalName>practica01.Shared.Resources.CommonMessages.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Update="shared\Resources\Errors\ErrorMessages.resx">
+      <LogicalName>practica01.Shared.Resources.Errors.ErrorMessages.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

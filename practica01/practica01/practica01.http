@@ -1,0 +1,20 @@
+@practica01_HostAddress = http://localhost:5231
+
+GET {{practica01_HostAddress}}/api/v1/rental-orders/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "customer": "Jose Vargas",
+  "vehiclesId": 1,
+  "plate": "ABC-123",
+  "requestedAt": "2030-12-20T10:00:00",
+  "address": {
+    "street": "Av. Titanes, Chorrillos",
+    "city": "Lima",
+    "postalCode": "15046"
+  },
+  "amount": 250
+}
+
+###
